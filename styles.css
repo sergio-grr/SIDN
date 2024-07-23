@@ -3,7 +3,6 @@
 
 html {
     box-sizing: border-box;
-    font-size: 16px;
 }
 
 *, *:before, *:after {
@@ -22,9 +21,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    height: 800px;
     padding: 20px;
     text-align: center;
+    flex-direction: column;
 }
 
 .header-container {
@@ -36,50 +36,55 @@ header {
 .header-container img {
     max-width: 100%;
     height: auto;
+    margin-bottom: 20px;
 }
 
 .principal-title {
     margin: 0 auto;
-    transform: translateX(-20%); /* Ajusta el valor según necesites */
-    position: relative; /* Añadido para contexto de absolute positioning */
+    position: relative;
 }
 
-.header-container h1 {
+.header-container h1, .header-container h2 {
     font-family: 'Josefin Sans', sans-serif;
     font-style: italic;
-    color: white;
-    font-size: 8vw;
+    font-size: calc(8vw + 10px);
     font-weight: 700;
     margin: 0;
     position: relative;
+}
+
+.header-container h1 {
+    color: white;
     z-index: 1;
-    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-10%, 20%);
 }
 
 .header-container h2 {
-    font-family: 'Josefin Sans', sans-serif;
-    font-style: italic;
     color: transparent;
-    font-size: 8vw;
-    font-weight: 700;
-    -webkit-text-stroke: 2px #FF8882; 
-    margin: 0;
-    position: absolute;
+    -webkit-text-stroke: 2px #FF8882;
     z-index: 2;
-    left: 17%; /* Ajusta el valor para moverlo a la izquierda */
-    top: 37%; /* Ajusta el valor para superponerlo */
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-10%, 67%);
 }
 
 .frame {
-    width: 90%;
-    max-width: 400px;
+    width: 100%;
+    max-width: 660px;
     list-style: none;
     padding: 0;
     text-align: left;
-    margin: 20px auto;
-    
+    margin-right: 75%;
+    margin-top: 20%;
+    position: relative;
+   
 
 }
+
 .frame li {
     margin-bottom: 20px;
 }
@@ -91,6 +96,37 @@ header {
     color: white;
 }
 
+.button-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rectangule1, .rectangule2 {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: white;
+    height: 7px;
+    width: 20%;
+    max-width: 42px;
+}
+
+.rectangule1 {
+    z-index: 2;
+
+    top: 10px;
+    left: 50%;
+    transform: translateX(-400%);
+}
+
+.rectangule2 {
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(300%);
+}
+
 .header-container button {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.5rem;
@@ -98,30 +134,74 @@ header {
     width: 100%;
     max-width: 300px;
     height: 62px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.800);
     border: none;
     padding: 10px 20px;
     color: #123A49;
     cursor: pointer;
     position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para la transformación y sombra */
+}
+
+.header-container button:hover {
+    transform: translateY(-5px); /* Mueve el botón ligeramente hacia arriba */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Añade una sombra más prominente */
 }
 
 .poison-img {
-    margin-top: 20px;
+    position: absolute;
+    right: 1%;
     max-width: 100%;
+    height: auto;
 }
 
-.header-container .responsibility {
+.header-container .responsibility h4 {
+    position: absolute;
     color: white;
     font-family: 'Lato', sans-serif;
-    margin-top: 20px;
+    top: 110%;
+    font-size: 12px;
+    text-align: right;
+    bottom: 0;
+    right: 10%;
 }
 
-.responsibility h4 {
-    opacity: 0.7;
-    font-size: 0.8rem;
-    font-weight: 400;
-    line-height: 1.2rem;
-    text-align: right;
-    color: white;
+@media (max-width: 768px) {
+    .header-container {
+        text-align: center;
+    }
+    
+    .frame {
+        width: 100%;
+        transform: translatey(50%);
+        margin: 20px auto;
+        text-align: left;
+    
+    }
+
+    .poison-img {
+        display: none;
+    }
+
+    .header-container h1, .header-container h2 {
+        transform: translate(0, 0);
+      
+    
+    }
+
+    .header-container h2 {
+        margin-top: 6%;
+        -webkit-text-stroke-width: 1px;
+    }
+
+    .header-container h1 {
+        top: 70%;
+    }
+
+    .button-container {
+        align-items: center;
+    }
+    .responsibility h4{
+        margin-top: 20%;
+}
 }
