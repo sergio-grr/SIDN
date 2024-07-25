@@ -192,13 +192,13 @@ button.uppercase:hover {
     .principal-title h2.trust-us {
         font-size: calc(2rem + 3vw);
         margin-top: 0;
-        margin-left: 0;
+        margin-left: -100px;
         text-align: center;
     }
 
     .principal-title h2.trust-us {
-        margin-top: -30px; 
-        margin-left: -40px;/* Ajusta este valor para moverlo más arriba */
+        margin-top: -28px; 
+        margin-left: -145px;/* Ajusta este valor para moverlo más arriba */
     }
     .content-row {
         flex-direction: column;
@@ -221,7 +221,21 @@ button.uppercase:hover {
         justify-content: center;
         margin-bottom: 50px;
     }
-
+    button.uppercase {
+        width: 256px;
+        height: 62px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        background-color: rgba(255, 255, 255, 0.800);
+        border: none;
+        padding: 10px 20px;
+        color: #123A49;
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+        z-index: 1;
+    }
     .poison-img-container {
         display: none; /* Oculta la imagen del veneno en dispositivos móviles */
     }
@@ -229,9 +243,9 @@ button.uppercase:hover {
     .responsibility {
         position: relative;
         bottom: auto;
-        top: auto;
+        top: 20px;
         margin-top: 20px;
-        width: 90%;
+        width: 100%;
         text-align: right; /* Alinea el texto de responsabilidad a la derecha */
     }
 
@@ -285,6 +299,7 @@ footer {
     font-size: 1rem;
     text-align: right;
     color: #b0c4de;
+    font-style: italic; 
 }
 
 

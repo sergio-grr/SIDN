@@ -7,7 +7,7 @@
 .flavours .section-title {
     margin-bottom: 30px;
     position: relative;
-    margin-top: 40px;
+    
 }
 
 .flavours .section-title .section-number2 {
@@ -47,15 +47,20 @@
 }
 
 @media (max-width: 768px) {
+
+    .section-number2{
+        margin-bottom: 100px;
+    }
     .flavours .section-title .section-number2 {
-        width: 200px;
+        width: 326px;
         height: 60px;
-        font-size: 1rem;
-        top: -30px;
+        font-size: 57.18px;
+        top: -20px;
+        margin-bottom: 100px!important;
     }
 
     .flavours .section-title h2 {
-        font-size: calc(6vw + 10px);
+        font-size: 57.18px;
         top: 20px;
     }
 }
@@ -64,22 +69,22 @@
     .flavours .section-title .section-number2 {
         width: 150px;
         height: 50px;
-        font-size: 0.8rem;
+        font-size: 27px;
         top: -20px;
     }
 
     .flavours .section-title h2 {
-        font-size: calc(5vw + 10px);
+        font-size: 57.18px;
         top: 15px;
     }
 }
 
 .card {
     border: none;
-    border-radius: 15px;
+    border-radius: 5%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    padding: 20px;
+    padding: 0px;
     background-color: white;
 }
 
@@ -105,7 +110,7 @@
 
 .card-body {
     text-align: left;
-    padding: 0;
+    padding-bottom: 0!important;
 }
 
 .card-title {
@@ -119,9 +124,13 @@
     font-family: 'Lato', sans-serif;
     font-size: 1rem;
     color: #123A49;
-    margin: 10px 0;
+   
 }
 
+.card .btn{
+    margin-left: 110px;
+    border-radius: 10px;
+}
 .hidden {
     display: none !important;
 }
@@ -132,11 +141,12 @@
     font-family: 'Lato', sans-serif;
     font-size: 0.9rem;
     font-weight: 700;
-    padding: 10px 20px;
+    
     color: white !important;
     margin: 10px;
     display: inline-block;
     cursor: pointer;
+
 }
 
 .btn-secondary {
