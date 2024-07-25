@@ -96,3 +96,27 @@ document.addEventListener('DOMContentLoaded', function () {
         cardRow.scrollLeft = scrollLeft - walk;
     });
 });
+
+
+// scroll
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const fadeElements = document.querySelectorAll('.fade-out');
+
+    function checkVisibility() {
+        fadeElements.forEach(element => {
+            const rect = element.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                element.classList.add('fade-in');
+                element.classList.remove('fade-out');
+            } else {
+                element.classList.add('fade-out');
+                element.classList.remove('fade-in');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', checkVisibility);
+    checkVisibility(); // inicializa para verificar la visibilidad al cargar la página
+});
