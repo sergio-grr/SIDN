@@ -20,20 +20,18 @@
     color: #ffffff;
     position: absolute;
     top: -40px;
-    right: 0 !important; /* Alinea a la derecha con importancia */
+    right: 0 !important;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     padding: 10px;
     text-align: right;
     margin-top: 10px;
-
 }
-
 
 .flavours .section-title h2 {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: calc(8vw + 10px); /* Ajusta el tamaño de la fuente de forma responsiva */
+    font-size: calc(8vw + 10px);
     font-weight: 700;
     position: relative;
     color: white;
@@ -48,35 +46,33 @@
     -webkit-text-stroke: 1px white;
 }
 
-/* Media queries para asegurarse de que el texto sea responsivo */
 @media (max-width: 768px) {
-    .flavours .section-title .section-number {
-        width: 200px; /* Ajusta el tamaño según sea necesario */
+    .flavours .section-title .section-number2 {
+        width: 200px;
         height: 60px;
         font-size: 1rem;
         top: -30px;
     }
 
     .flavours .section-title h2 {
-        font-size: calc(6vw + 10px); /* Ajusta el tamaño de la fuente de forma responsiva */
+        font-size: calc(6vw + 10px);
         top: 20px;
     }
 }
 
 @media (max-width: 576px) {
-    .flavours .section-title .section-number {
-        width: 150px; /* Ajusta el tamaño según sea necesario */
+    .flavours .section-title .section-number2 {
+        width: 150px;
         height: 50px;
         font-size: 0.8rem;
         top: -20px;
     }
 
     .flavours .section-title h2 {
-        font-size: calc(5vw + 10px); /* Ajusta el tamaño de la fuente de forma responsiva */
+        font-size: calc(5vw + 10px);
         top: 15px;
     }
 }
-
 
 .card {
     border: none;
@@ -126,15 +122,61 @@
     margin: 10px 0;
 }
 
-.btn{
-    background-color: #f7797d !important;;
-    border: none!important;
+.hidden {
+    display: none !important;
+}
+
+.btn {
+    background-color: #f7797d !important;
+    border: none !important;
     font-family: 'Lato', sans-serif;
     font-size: 0.9rem;
     font-weight: 700;
     padding: 10px 20px;
-    right: 0!important;
-    color: white!important;
-
+    color: white !important;
+    margin: 10px;
+    display: inline-block;
+    cursor: pointer;
 }
 
+.btn-secondary {
+    background-color: #6c757d !important;
+}
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Reglas específicas del carrusel para pantallas menores a 1000px */
+@media (max-width: 999px) {
+    #card-row {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch; /* Habilitar el desplazamiento suave en iOS */
+    }
+
+    .card-container {
+        flex: 0 0 65%; /* Mostrar 1 tarjeta completa y parte de la siguiente */
+        margin-right: 10px;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none;
+    }
+
+    #load-more-btn,
+    #reset-btn {
+        display: none;
+    }
+}
+
+@media (min-width: 1000px) {
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none;
+    }
+}
