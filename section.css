@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+.development {
+    padding: 50px 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.section-title {
+    margin-bottom: 30px;
+    position: relative;
+ 
+}
+
+.section-title .section-number {
+    background-image: url(./assets/Rayitas.png);
+    background-size: cover;
+    text-align: left;
+    width: 326px;
+    height: 99px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5rem;
+    color: #123A49;
+    position: absolute;
+    top: -40px;
+    left: 0;
+    display: flex;
+    padding: 10px;
+}
+
+.section-title h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    font-size: calc(8vw + 10px);
+    font-weight: 700;
+    position: relative;
+    color: #123A49;
+    text-align: left;
+    width: 100%;
+    
+
+}
+
+
+.section-title .highlight {
+    font-family: 'Josefin Sans', sans-serif;
+    color: transparent;
+    -webkit-text-stroke: 2px #FF8882;
+    margin-left: 4%;
+    position: relative;
+    z-index: 4;
+    top: -70px; 
+}
+
+.section-title .justify-content-center {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.section-title .justify-content-center p {
+    text-align: center;
+    width: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+    color: #123A49;
+    margin-bottom: 10%;
+}
+
+.section-title p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+    color: #123A49;
+    margin-bottom: 10%;
+
+}
+
+.development .content {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.background-rectangle {
+    position: absolute;
+    width: 55%;
+    height: 120%;
+    background: #9dbeb946;
+    z-index: -1;
+    top: -10%;
+    margin-bottom: 5%;
+    margin-right: 20%;
+}
+
+.development .content .col-md-6 {
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.development .content h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #123A49;
+}
+
+.development .content p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    color: #123A49;
+    line-height: 1.5;
+}
+
+.development .content img {
+    border-radius: 8px;
+    width: 100%;
+}
+
+@media (max-width: 768px){
+
+    .section-title .highlight {
+        font-family: 'Josefin Sans', sans-serif;
+        color: transparent;
+        -webkit-text-stroke: 2px #FF8882;
+        margin-left: 4%;
+        position: relative;
+        z-index: 4;
+        top: -20px; 
+    }
+    .background-rectangle {
+        position: absolute;
+        width: 40%;
+        height: 26%;
+        background: #9dbeb946;
+        z-index: -1;
+        top: 0.5%;
+        margin-left: 75%; 
+        margin-bottom: 15%;
+    }
+    
+}
