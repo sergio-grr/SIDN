@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     cardRow.addEventListener('touchmove', (e) => {
         const x = e.touches[0].pageX - cardRow.offsetLeft;
-        const walk = (x - startX) * 2; // Velocidad de desplazamiento
+        const walk = (x - startX) * 3; // Velocidad de desplazamiento
         cardRow.scrollLeft = scrollLeft - walk;
     });
 });

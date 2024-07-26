@@ -150,8 +150,8 @@ button.uppercase:hover {
     display: flex;
     justify-content: right;
     align-items: center;
-    position: relative; /* Añadido para permitir el ajuste de la posición */
-    top: -400px; /* Ajusta este valor según sea necesario para mover la imagen hacia arriba */
+    position: relative; 
+    top: -400px; 
 }
 
 .poison-img-container img {
@@ -198,7 +198,7 @@ button.uppercase:hover {
 
     .principal-title h2.trust-us {
         margin-top: -35px; 
-        margin-left: -145px;/* Ajusta este valor para moverlo más arriba */
+        margin-left: -145px;
     }
     .content-row {
         flex-direction: column;
@@ -238,7 +238,7 @@ button.uppercase:hover {
         z-index: 1;
     }
     .poison-img-container {
-        display: none; /* Oculta la imagen del veneno en dispositivos móviles */
+        display: none; 
     }
 
     .responsibility {
@@ -247,7 +247,7 @@ button.uppercase:hover {
         top: 20px;
         margin-top: 20px;
         width: 100%;
-        text-align: right; /* Alinea el texto de responsabilidad a la derecha */
+        text-align: right; 
     }
 
     .responsibility h4 {
