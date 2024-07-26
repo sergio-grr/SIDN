@@ -143,12 +143,12 @@
     }
     .background-rectangle {
         position: absolute;
-        width: 60%;
+        width: 55%;
         height: 36%;
         background: #9dbeb946;
         z-index: -1;
         top: -4.5%;
-        margin-left: 70%; 
+        margin-left: 65%; 
         margin-bottom: 15%;
     }
     
