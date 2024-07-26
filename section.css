@@ -131,7 +131,10 @@
 }
 
 @media (max-width: 768px){
-
+    h2{
+        font-size: 57.18px !important;
+        top: -18px;
+    }
     .section-title .highlight {
         font-family: 'Josefin Sans', sans-serif;
         color: transparent;
@@ -140,6 +143,7 @@
         position: relative;
         z-index: 4;
         top: -27px; 
+       
     }
     .background-rectangle {
         position: absolute;
