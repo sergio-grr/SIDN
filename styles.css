@@ -190,14 +190,14 @@ button.uppercase:hover {
 
     .principal-title h1.buy-poison,
     .principal-title h2.trust-us {
-        font-size: calc(2rem + 3vw);
+        font-size: 59px;
         margin-top: 0;
-        margin-left: -100px;
+        margin-left: -80px;
         text-align: center;
     }
 
     .principal-title h2.trust-us {
-        margin-top: -28px; 
+        margin-top: -35px; 
         margin-left: -145px;/* Ajusta este valor para moverlo más arriba */
     }
     .content-row {
@@ -209,8 +209,9 @@ button.uppercase:hover {
         width: 100%;
         margin: 0;
         align-items: center;
+        
     }
-
+    
     .frame {
         width: 90%;
         margin: 0 auto;
