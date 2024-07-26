@@ -143,18 +143,20 @@
     }
     .background-rectangle {
         position: absolute;
-        width: 55%;
-        height: 36%;
+        width: 40%;
+        height: 25%;
         background: #9dbeb946;
         z-index: -1;
-        top: -4.5%;
-        margin-left: 75%; 
+        top: -5%;
+        margin-left: 76%; 
         margin-bottom: 15%;
     }
     
+    h3 {
+        text-align: center;
+    }
 .section-title p {
-    margin-right: 130px;
-    margin-bottom: 20%;
+ font-size: 21px;
 
 }
 }
